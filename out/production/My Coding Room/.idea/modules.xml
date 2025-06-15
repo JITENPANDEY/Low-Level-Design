@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/State Design Pattern/LLD - ATM Machine/LLD - ATM Machine.iml" filepath="$PROJECT_DIR$/State Design Pattern/LLD - ATM Machine/LLD - ATM Machine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LLD - BookMyShow/LLD - BookMyShow.iml" filepath="$PROJECT_DIR$/LLD - BookMyShow/LLD - BookMyShow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/State Design Pattern/LLD - Elevator System/LLD - Elevator System.iml" filepath="$PROJECT_DIR$/State Design Pattern/LLD - Elevator System/LLD - Elevator System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LLD - Logger Framework/LLD - Logger Framework.iml" filepath="$PROJECT_DIR$/LLD - Logger Framework/LLD - Logger Framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Strategy Design Pattern/LLD - Parking Lot/LLD - Parking Lot.iml" filepath="$PROJECT_DIR$/Strategy Design Pattern/LLD - Parking Lot/LLD - Parking Lot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LLD - Spliwise/LLD - Spliwise.iml" filepath="$PROJECT_DIR$/LLD - Spliwise/LLD - Spliwise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/State Design Pattern/LLD - Vending Machine/LLD - Vending Machine.iml" filepath="$PROJECT_DIR$/State Design Pattern/LLD - Vending Machine/LLD - Vending Machine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/My Coding Room.iml" filepath="$PROJECT_DIR$/.idea/My Coding Room.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Utility/Utility.iml" filepath="$PROJECT_DIR$/Utility/Utility.iml" />
+    </modules>
+  </component>
+</project>

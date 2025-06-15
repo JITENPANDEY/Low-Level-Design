@@ -1,0 +1,10 @@
+[2025-06-12T09:40:38.975586] [main] [DEBUG] This is a debug message
+[2025-06-12T09:40:38.976684] [main] [WARN] This is a warning message
+[2025-06-12T09:40:38.976831] [main] [ERROR] This is an error message
+[2025-06-12T09:41:12.712074] [main] [DEBUG] This is a debug message
+[2025-06-12T09:41:12.713935] [main] [WARN] This is a warning message
+[2025-06-12T09:41:12.714005] [main] [ERROR] This is an error message
+[2025-06-12T09:42:13.446040] [main] [DEBUG] This is a debug message
+[2025-06-12T09:42:13.447293] [main] [INFO] This is an info message
+[2025-06-12T09:42:13.447359] [main] [WARN] This is a warning message
+[2025-06-12T09:42:13.447399] [main] [ERROR] This is an error message
