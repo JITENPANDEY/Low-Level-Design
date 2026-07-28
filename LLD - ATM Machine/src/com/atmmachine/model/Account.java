@@ -1,24 +1,39 @@
 package com.atmmachine.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import java.math.BigDecimal;
 
-@Data
-@AllArgsConstructor
 public class Account {
     private String accountNumber;
-    private double balance;
+    private BigDecimal balance;
 
-    public synchronized void credit(double amount) {
-        this.balance += amount;
+    public Account(String accountNumber, BigDecimal balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
     }
 
-    public synchronized boolean debit(double amount) {
-        if (amount <= balance) {
-            balance -= amount;
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public BigDecimal getBalance() {
+        return balance;
+    }
+
+    public void credit(BigDecimal amount) {
+        this.balance.subtract(amount);
+    }
+
+    /** Why debit() inside Account?
+     - Because Account owns balance.
+     - Account ke bahar koi balance manipulate nahi karega.
+     - Ye encapsulation hai.
+     */
+    public boolean debit(BigDecimal amount) {
+        if(amount.compareTo(balance) <= 0) {
+            balance = balance.subtract(amount);
             return true;
         }
         return false;
     }
+
 }

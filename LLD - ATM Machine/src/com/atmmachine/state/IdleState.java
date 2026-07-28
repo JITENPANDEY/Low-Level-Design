@@ -1,43 +1,22 @@
 package com.atmmachine.state;
 
-import com.atmmachine.atm.ATM;
+import com.atmmachine.model.ATM;
 import com.atmmachine.model.Card;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
 
-@Data
-@RequiredArgsConstructor
-public class IdleState implements ATMState{
-    private final ATM atm;
+public class IdleState extends ATMState {
 
     @Override
-    public void insertCard(Card card, int pin) {
-        boolean isAuthenticated = atm.getBankingService().authenticate(card, pin);
-        if (!isAuthenticated) {
-            throw new RuntimeException("Authentication failed. Please check your card and PIN.");
-        }
+    public void insertCard(ATM atm, Card card) {
+
         atm.setCurrentCard(card);
-        atm.setCurrentState(atm.getAuthenticatedState());
-        System.out.println("Card authenticated successfully.");
+
+        atm.setCurrentState(new HasCardState());
+
+        System.out.println("Card inserted successfully.");
     }
 
     @Override
-    public void ejectCard() {
-        System.out.println("Please insert a card first..!");
-    }
-
-    @Override
-    public void checkBalance() {
-        System.out.println("Please insert a card first..!");
-    }
-
-    @Override
-    public void withdraw(double amount) {
-        System.out.println("Please insert a card first..!");
-    }
-
-    @Override
-    public void deposit(double amount) {
-        System.out.println("Please insert a card first..!");
+    public void ejectCard(ATM atm) {
+        System.out.println("No card inserted.");
     }
 }

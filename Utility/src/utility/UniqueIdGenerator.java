@@ -23,9 +23,6 @@ public class UniqueIdGenerator {
         if (count > MAX_COUNTER) {
             // Reset counter and wait for next second
             counter.set(0);
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException ignored) {}
             return generateId();
         }
 

@@ -1,13 +1,13 @@
 package com.atmmachine.service;
 
 import com.atmmachine.model.Account;
-import com.atmmachine.model.Card;
+
+import java.math.BigDecimal;
 
 public interface IBankingService {
-    void addAccount(Account account);
-    boolean authenticate(Card card, int pin);
-    Account getAccount(String accountNumber);
-    boolean withdraw(String accountNumber, double amount);
-    boolean deposit(String accountNumber, double amount);
-    double getBalance(String accountNumber);
+    void withdraw(Account account, BigDecimal amount);
+
+    void deposit(Account account, BigDecimal amount);
+
+    BigDecimal getBalance(Account account);
 }
